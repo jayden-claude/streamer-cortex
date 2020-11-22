@@ -1,0 +1,28 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - 'db/schema.rb'
+    - 'bin/*'
+    - 'node_modules/**/*'
+  NewCops: enable
+  TargetRubyVersion: 2.7
+
+Style/Documentation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Metrics/MethodLength:
+  Max: 15
+
+Naming/PredicateName:
+  Enabled: false
