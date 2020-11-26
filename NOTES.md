@@ -1,1 +1,2 @@
 - 2020-09-07 23:17:26 UTC: chore: bump version
+- 2020-11-26 11:08:49 UTC: test: add unit tests
