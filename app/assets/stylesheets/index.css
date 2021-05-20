@@ -1,0 +1,43 @@
+.body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding-top: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.card-body {
+  flex: 1;
+  padding: 15px;
+}
+
+.card-text {
+  height: 150px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+/* .d-flex {
+  padding: 10px;
+} */
