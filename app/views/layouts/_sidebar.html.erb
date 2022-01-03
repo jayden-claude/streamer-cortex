@@ -1,0 +1,22 @@
+<nav id='sidebarMenu' class='d-md-block bg-light sidebar'>
+  <div class='position-sticky pt-3 ml-5'>
+    <ul class='nav flex-column'>
+      <li class='nav-item'>
+        <a class='nav-link active' aria-current='page' href='<%= root_path %>'>
+          Home
+        </a>
+      </li>
+      <li class='nav-item m-2'>
+        Playlists
+      </li>
+      <% @playlists&.each do |playlist| %>
+        <li class='nav-item'>
+          <a class='nav-link' href='<%= playlist_path(playlist) %>'>
+            <%= playlist.name %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+    <%= link_to 'Create Playlist', new_playlist_path, class: 'btn btn-secondary m-2' %>
+  </div>
+</nav>
