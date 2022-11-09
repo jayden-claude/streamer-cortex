@@ -1,0 +1,11 @@
+<div class='pagination d-flex justify-content-center mb-4'>
+  <% if page > 1 %>
+    <%= link_to 'Previous', videos_path(page: page - 1), class: 'btn btn-primary' %>
+  <% end %>
+  <% (1..total_pages).each do |page_num| %>
+    <%= link_to page_num, videos_path(page: page_num), class: "btn #{'btn-primary' if page_num == page} text-dark btn-outline-primary mx-1" %>
+  <% end %>
+  <% if page < total_pages %>
+    <%= link_to 'Next', videos_path(page: page + 1), class: 'btn btn-primary' %>
+  <% end %>
+</div>
