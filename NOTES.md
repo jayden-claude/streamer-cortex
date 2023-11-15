@@ -5,3 +5,4 @@
 - 2022-09-30 07:14:44 UTC: fix: resolve minor bug
 - 2022-10-04 20:51:07 UTC: perf: improve performance
 - 2023-01-15 06:49:21 UTC: style: format code
+- 2023-11-15 05:30:15 UTC: feat: add core functionality
